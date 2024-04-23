@@ -1,0 +1,99 @@
+PS C:\Users\Nilesh\projectA> git status
+On branch master
+
+No commits yet  
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        cart.html
+        images/
+        index.html
+        js/
+        userreg.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Nilesh\projectA> git add .
+warning: in the working copy of 'cart.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'userreg.html', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\Nilesh\projectA> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   cart.html
+        new file:   images/italianpizza.jpg
+        new file:   images/salad.jpg
+        new file:   index.html
+        new file:   staticresource/bootstrap.min.css
+        new file:   userreg.html
+
+PS C:\Users\Nilesh\projectA> git commit -m "primary project files added"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+
+fatal: unable to auto-detect email address (got 'Nilesh@DESKTOP-P05PPGT.(none)')
+PS C:\Users\Nilesh\projectA> git config --global user.email "ndmhaiskar@gmail.com"
+PS C:\Users\Nilesh\projectA> git commit -m "primary project files added"
+[master (root-commit) 20ea294] primary project files added
+ 8 files changed, 107 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 cart.html
+ create mode 100644 images/italianpizza.jpg
+ create mode 100644 images/salad.jpg
+ create mode 100644 js/bootstrap.bundle.min.js
+ create mode 100644 userreg.html
+PS C:\Users\Nilesh\projectA> git add .
+PS C:\Users\Nilesh\projectA> git commit -m "cart checkout changes"
+[master 427b08e] cart checkout changes
+ 1 file changed, 2 insertions(+)
+warning: in the working copy of 'cart.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+[master afa26ac] link and script added
+ 3 files changed, 11 insertions(+), 3 deletions(-)
+PS C:\Users\Nilesh\projectA> git remote add origin https://github.com/ndmhaiskar/projectA.git
+PS C:\Users\Nilesh\projectA> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Nilesh\projectA> git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (21/21), 758.83 KiB | 3.02 MiB/s, done.
+Total 21 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/ndmhaiskar/projectA.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Users\Nilesh\projectA>
+
+
+
+
+
+
+
+
+
+
+
+
+
