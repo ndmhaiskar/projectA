@@ -100,6 +100,10 @@ From https://github.com/ndmhaiskar/projectA
  * branch            HEAD       -> FETCH_HEAD
 PS D:\projectA> 
 
+### How to add new files and chages to the online repository?
+D:\projectA> git push --set-upstream https://github.com/ndmhaiskar/projectA master
+git push 
+
 
 
 
